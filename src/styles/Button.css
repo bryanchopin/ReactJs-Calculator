@@ -1,0 +1,6 @@
+.row-4 button{
+    padding: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 50%;
+}
