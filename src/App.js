@@ -14,7 +14,7 @@ function App() {
   }
 
   const equalsValue = () => {
-    setDisplayValue(evaluate(displayValue));
+      displayValue ? setDisplayValue(evaluate(displayValue)) : alert("Enter a value");
   }
 
 
