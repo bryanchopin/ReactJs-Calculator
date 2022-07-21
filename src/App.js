@@ -2,7 +2,7 @@ import './App.css';
 import Button  from './Components/Button';
 import Display from './Components/Display';
 import { useState } from 'react';
-import {evaluate } from 'mathjs';
+import  {evaluate } from 'mathjs';
 
 function App() {
 
@@ -12,7 +12,6 @@ function App() {
   const setValue = value => {
     setDisplayValue(displayValue + value);
   }
-
   const equalsValue = () => {
       displayValue ? setDisplayValue(evaluate(displayValue)) : alert("Enter a value");
   }

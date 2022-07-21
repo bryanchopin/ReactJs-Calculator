@@ -7,4 +7,5 @@ span{
     font-size: 6em;
     background-color: transparent;
     overflow: hidden;
+    overflow-wrap: anywhere;
 }
