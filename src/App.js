@@ -2,6 +2,7 @@ import './App.css';
 import Button  from './Components/Button';
 import Display from './Components/Display';
 import { useState } from 'react';
+import {evaluate } from 'mathjs';
 
 function App() {
 
@@ -10,6 +11,10 @@ function App() {
 
   const setValue = value => {
     setDisplayValue(displayValue + value);
+  }
+
+  const equalsValue = () => {
+    setDisplayValue(evaluate(displayValue));
   }
 
 
@@ -39,7 +44,7 @@ function App() {
             <Button getValue={setValue} >*</Button>
           </div>
           <div className='row-4'>
-            <Button getValue={setValue} >=</Button>
+            <Button getValue={equalsValue} >=</Button>
             <Button getValue={setValue} >0</Button>
             <Button getValue={setValue} >.</Button>
             <Button getValue={setValue} >/</Button>
