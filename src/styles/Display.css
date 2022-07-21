@@ -1,0 +1,10 @@
+span{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 20px;
+    font-size: 6em;
+    background-color: transparent;
+    overflow: hidden;
+}

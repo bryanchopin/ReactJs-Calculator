@@ -3,13 +3,17 @@ import '../styles/Button.css';
 
 function Button(props) {
 
-  const isOperator = valor => {
-    return isNaN(valor) && (valor != '.') && (valor != '=');
+  const isNumberKey = value =>{
+    return isNaN(value) && (value !== '.') && (value !== '=');
+  }
+  const isClearKey = value =>{
+    return value === 'Clear';
   }
 
   return (
     <button
-      className= { isOperator(props.children) ? "buttonNumber" : null } >
+      className= { isNumberKey(props.children) ? "buttonNumber" : "buttonPrimary" } 
+      onClick= { isClearKey(props.children) ? props.resetValue : () => props.getValue(props.children) } >
       {props.children}
     </button>
   );

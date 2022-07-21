@@ -1,6 +1,38 @@
 .row-4 button{
-    padding: 50px;
-    border: 2px solid white;
+    width: 90px;
+    height: 90px;
     cursor: pointer;
-    border-radius: 50%;
+    border-style: none;
+    font-size: 2rem;
+    font-weight: 200;
+    user-select: none;
+}
+
+.row-4:nth-child(5) button{
+    width: 80%;
+}
+
+.buttonPrimary{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+}
+
+.buttonNumber{
+    background: rgba(231, 204, 120, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(231, 204, 120, 0.56);     
+}
+
+.buttonNumber:hover{
+    background: rgba(234, 249, 73, 0.5);
+}
+.buttonPrimary:hover{
+    background: #e7e7e7e2;
 }
